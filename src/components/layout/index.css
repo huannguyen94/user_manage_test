@@ -1,0 +1,42 @@
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+    background: #f0f2f5;
+    width: 80px
+
+}
+  
+.trigger:hover {}
+  
+.logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.logoHV {
+    height: 100%;
+    padding-left: 10px;
+    font-size: 35px;
+    width: 120px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.ant-layout-sider-children {
+    height: 100%;
+    margin-top: -0.1px;
+    padding-top: 0.1px;
+    background: #f0f2f5;
+}
+.ant-menu-sub.ant-menu-inline {
+    background: #ffffff;
+}
+
+.ant-layout-has-sider {
+    flex-direction: row;
+    background: white;
+}

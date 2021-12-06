@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Headers from './components/layout/Headers';
+import Sidebar from './components/layout/Sidebar';
+import DieuHanh from './components/DieuHanh';
+import NhanHang from './components/NhanHang';
+import {Route, Switch} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="back">
+			<div className="contents" style={{display:'flex'}} >
+				<Sidebar />
+				<div style={{width:"100%"}}>
+					<Headers />
+					<Route path="/dieu_hanh" exact component={DieuHanh} />
+					<Route path="/nhan_hang" exact component={NhanHang} />
+				</div>
+				<div>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default App;
